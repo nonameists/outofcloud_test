@@ -14,7 +14,8 @@ class RssData:
     div_img_class = None
     rss_url = None
 
-    def __write_data(self, entries):
+    @staticmethod
+    def __write_data(entries):
         """
         Метод принимает список с объектами класса FeedParserDict.
         Забирает заголовок статьи, ссылку на статью, описание, дату публикации.
